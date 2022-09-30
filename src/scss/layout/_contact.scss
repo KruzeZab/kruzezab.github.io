@@ -28,7 +28,7 @@
     color: var(--text-grey);
     line-height: 1.7;
 
-    @include for-large {
+    @include for-extra-large {
       letter-spacing: 0;
       font-size: 1.6rem;
     }

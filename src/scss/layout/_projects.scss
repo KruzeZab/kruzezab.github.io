@@ -32,7 +32,7 @@
     line-height: 1.6;
     color: var(--text-grey);
 
-    @include for-large {
+    @include for-extra-large {
       font-size: 1.6rem;
     }
   }
