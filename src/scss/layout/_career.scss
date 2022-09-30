@@ -1,0 +1,14 @@
+.career {
+  background-color: var(--bg-secondary);
+  padding: 5rem 2rem 6rem 2rem;
+
+  @include for-medium {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  @include for-large {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+}

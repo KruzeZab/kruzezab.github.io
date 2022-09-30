@@ -1,0 +1,46 @@
+.btn {
+  padding: .8rem 1.3rem;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: var(--transit);
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.btn--yellow {
+  background-color: var(--yellow);
+  color: var(--dark);
+  backface-visibility: hidden;
+
+  
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--dark);
+
+  
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark);
+}
+
+.btn--disbaled {
+  background-color: var(--text-grey);
+  cursor: not-allowed;
+}

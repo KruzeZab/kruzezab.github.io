@@ -1,0 +1,46 @@
+.u-color-primary {
+  color: var(--primary-color) !important;
+}
+.u-color-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.u-section-wrapper {
+  @include for-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.u-section-spacing {
+  padding: {
+    top: 5rem;
+    bottom: 6rem;
+    left: 4rem;
+    right: 4rem;
+  }
+
+  @include for-medium {
+    padding: {
+      top: 5rem;
+      bottom: 6rem;
+      left: 7rem;
+      right: 7rem;
+    }
+  }
+
+  @include for-large {
+    padding: {
+      top: 5rem;
+      bottom: 6rem;
+      left: 15rem;
+      right: 15rem;
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

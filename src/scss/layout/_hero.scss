@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-primary);
+  padding-top: 6rem;
+
+  &__description-text {
+    letter-spacing: 1.2px;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+  }
+
+  &__subtext {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  &__wave {
+    display: inline-block;
+  }
+
+  &__quotes {
+    background-color: var(--bg-secondary);
+    padding: 1rem 2rem;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-left: 0.5rem solid var(--primary-color);
+    width: 70%;
+    margin: 0 auto;
+
+    &::before {
+      color: var(--primary-color);
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+  }
+
+  &__quotes-blockquote {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+
+  &__quotes-author {
+    margin-top: 1rem;
+    &::before {
+      content: '\2014\0020';
+    }
+  }
+
+  @include for-large {
+    & {
+      flex-direction: row;
+      padding: 0 5rem;
+    }
+
+    &__description {
+      flex: 1 0 calc(60% - 1rem);
+    }
+
+    min-height: 90vh;
+  }
+
+  @include for-large {
+    padding: 0 20rem;
+  }
+}

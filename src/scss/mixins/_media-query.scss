@@ -1,0 +1,37 @@
+// Media query breakpoints
+$xsmall: 0px;
+$small: 600px;
+$medium: 900px;
+$large: 1200px;
+$xlarge: 1536px;
+
+
+@mixin for-extra-small {
+  @media only screen and (min-width: $xsmall) {
+    @content;
+  }
+}
+
+@mixin for-small {
+  @media only screen and (min-width: $small) {
+    @content;
+  }
+}
+
+@mixin for-medium {
+  @media only screen and (min-width: $medium) {
+    @content;
+  }
+}
+
+@mixin for-large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin for-extra-large {
+  @media only screen and (min-width: $xlarge) {
+    @content;
+  }
+}

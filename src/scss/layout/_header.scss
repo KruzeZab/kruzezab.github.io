@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  margin-bottom: 3rem;
+  background-color: var(--bg-primary);
+  padding: 2rem 5%;
+  min-height: 6rem;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  z-index: 998;
+
+  @include for-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+  }
+
+  @include for-large {
+    padding: 2rem 20rem;
+  }
+
+  &__branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--light);
+    }
+
+    &-image {
+    width: 3rem;
+    border-radius: 50%;
+    }
+  }
+
+
+  &__menu {
+    cursor: pointer;
+
+    div {
+      background-color: var(--light);
+      width: 2.5rem;
+      height: 0.2rem;
+      margin: 0.6rem 0;
+      border-radius: var(--border-radius);
+    }
+
+    @include for-large {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  display: none;
+  margin-top: 1rem;
+
+  @include for-large {
+    margin-top: 0;
+    display: block;
+  }
+
+  &__list {
+    @include for-large {
+      display: flex;
+      // flex-wrap: wrap;
+      gap: 2rem;
+    }
+    
+  }
+
+  &--active {
+    display: block;
+  }
+
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: var(--light);
+    padding: 1.3rem 0;
+    transition: var(--transit);
+
+    &--active {
+      color: var(--primary-color);
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    @include for-large {
+      padding: 0 1.3rem;
+    }
+  }
+}
+
+.menu-active {
+  .header__menu-1 {
+    transform: translateY(0.7rem);
+    opacity: 0;
+  }
+
+  .header__menu-3 {
+    transform: translateY(-0.7rem);
+    opacity: 0;
+    
+  }
+}

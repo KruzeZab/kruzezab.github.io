@@ -1,0 +1,58 @@
+.about {
+  background-color: var(--bg-secondary);
+
+  &__description {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+  }
+
+  &__image {
+    text-align: center;
+    width: 100%;
+    
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  &__image-photo {
+    display: block;
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+    outline: 0.5rem solid var(--primary-color);
+    outline-offset: 0.5rem;
+    border-radius: var(--border-radius);
+
+    @include for-medium {
+      width: 60%;
+    }
+
+    @include for-large {
+      width: 100%;
+    }
+  }
+
+  @include for-medium {
+    &__image {
+      order: 2;
+    }
+
+    &__description {
+      margin-right: 5rem;
+    }
+  }
+  @include for-large {
+    &__description {
+      font-size: 1.4rem;
+      line-height: 2;
+    }
+  }
+
+  @include for-extra-large {
+    &__description {
+
+      font-size: 1.6rem;
+    }
+  }
+}
