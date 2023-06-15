@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Sohne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/Sohne-Buch-400.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Sohne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./assets/fonts/Sohne-Halbefett-600.otf')
+    format('truetype') format('truetype');
+}
+@font-face {
+  font-family: 'Sohne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/Sogne-Dreiviertelfett-700.otf')
+    format('truetype') format('truetype');
+}
+@font-face {
+  font-family: 'Sohne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./assets/fonts/Sohne-Fett-800.otf') format('truetype')
+    format('truetype');
+}
+
+body {
+  font-family: 'Sohne', sans-serif;
+}
+
+.c-banner-pink {
+  background: rgb(255, 87, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 87, 207, 1) 0%,
+    rgba(252, 77, 202, 1) 100%
+  );
+}
+
+.project-title {
+  @apply text-xl font-bold tracking-wide mb-8 text-gray-800 dark:text-gray-100;
+}
+
+.md-border-left {
+  @apply md:border-l md:pl-6 dark:border-l-gray-600;
+}
+
+.list-wrapper {
+  @apply pl-4 list-disc flex flex-col text-gray-700 dark:text-gray-200 text-sm tracking-wide gap-3;
+}
+
+.item-wrapper {
+  @apply md-border-left flex flex-col gap-12;
+}
