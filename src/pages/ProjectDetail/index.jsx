@@ -16,15 +16,17 @@ const ProjectDetail = () => {
   const renderLinks = useMemo(
     () => (
       <div className="flex flex-col gap-2 my-4 text-gray-700 dark:text-gray-100 text-sm">
-        {project.githubLink && <div>
-          Github:{' '}
-          <a
-            href={project.githubLink}
-            className="text-blue-500 hover:underline"
-          >
-            {project.githubLink}
-          </a>
-        </div>}
+        {project.githubLink && (
+          <div>
+            Github:{' '}
+            <a
+              href={project.githubLink}
+              className="text-blue-500 hover:underline"
+            >
+              {project.githubLink}
+            </a>
+          </div>
+        )}
 
         <div>
           Live Demo:{' '}
@@ -59,13 +61,15 @@ const ProjectDetail = () => {
           <div className="flex flex-col gap-8">
             {project.screenshots.map((image) => (
               <div>
-              <h4 className='text-gray-700 dark:text-white font-semibold text-lg mb-4'>{image.title}</h4>
+                <h4 className="text-gray-700 dark:text-white font-semibold text-lg mb-4">
+                  {image.title}
+                </h4>
                 <img
-                src={image.src}
-                alt={image.alt}
-                className="rounded-lg w-full h-72"
+                  src={image.src}
+                  alt={image.alt}
+                  className="rounded-lg w-full h-96"
                 />
-                </div>
+              </div>
             ))}
           </div>
         </div>

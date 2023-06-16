@@ -11,7 +11,7 @@ import {
   BsSpeedometer2,
   BsUmbrella,
   BsRobot,
-  BsMessenger
+  BsMessenger,
 } from 'react-icons/bs';
 import {
   MdComputer,
@@ -19,7 +19,6 @@ import {
   MdOutlineVolunteerActivism,
   MdPeopleAlt,
   MdEnhancedEncryption,
- 
 } from 'react-icons/md';
 import { TbSocial } from 'react-icons/tb';
 
@@ -41,12 +40,14 @@ export const PROJECTS = [
       {
         title: 'React Developer',
         icon: <FaReact fontSize="16px" />,
-        extraClass: 'text-cyan-500 bg-cyan-50 dark:text-cyan-400 dark:bg-cyan-900',
+        extraClass:
+          'text-cyan-500 bg-cyan-50 dark:text-cyan-400 dark:bg-cyan-900',
       },
       {
         title: 'Encryption',
         icon: <MdEnhancedEncryption fontSize="16px" />,
-        extraClass: 'text-green-500 bg-green-50 dark:bg-green-900 dark:text-green-400',
+        extraClass:
+          'text-green-500 bg-green-50 dark:bg-green-900 dark:text-green-400',
       },
     ],
     screenshots: [
@@ -83,7 +84,7 @@ export const PROJECTS = [
     title: 'Facebook Messenger Dictionary Bot',
     content: [
       'A Facebook messenger based bot to help users with their English.',
-      'Users can send a word to the Messenger Dictionary Bot, and it will respond with the word\'s meaning, part of speech, and pronunciation if available.',
+      "Users can send a word to the Messenger Dictionary Bot, and it will respond with the word's meaning, part of speech, and pronunciation if available.",
       'Integrated Facebook API and enabled permissions',
       'Enabled quick action buttons for synonyms, antonyms, and examples for the given word.',
       'It has 4,000+ daily messages and 2,000+ subscribers from all around the world.',
@@ -107,12 +108,27 @@ export const PROJECTS = [
         extraClass:
           'text-red-500 bg-red-50 dark:text-red-100 dark:bg-red-900',
       },
-      
     ],
     screenshots: [
       {
-        src: '/images/projects/image-steganography.png',
-        alt: 'Image Steganography',
+        title: 'Example 1',
+        src: '/assets/images/dictionary/example-1.png',
+        alt: 'Messenger Dictionary Bot Example 1',
+      },
+      {
+        title: 'Example 2',
+        src: '/assets/images/dictionary/example-2.png',
+        alt: 'Messenger Dictionary Bot Example 2',
+      },
+      {
+        title: 'Example 3',
+        src: '/assets/images/dictionary/example-3.png',
+        alt: 'Messenger Dictionary Bot Example 3',
+      },
+      {
+        title: 'Example 4',
+        src: '/assets/images/dictionary/example-4.png',
+        alt: 'Messenger Dictionary Bot Example 3',
       },
     ],
   },
@@ -126,18 +142,20 @@ export const PROJECTS = [
       'Realtors can browse and search for properties based on specific criteria, facilitating their interactions with potential clients.',
       'Users can browse and explore property listings based on their preferences, providing them with a wide range of options.',
       'A robust backend system enables easy management of property listings, including upload, editing, and removal functionalities.',
-      'Users receive email notifications for property inquiries, and saved search alerts.'
+      'Users receive email notifications for property inquiries, and saved search alerts.',
     ],
     tags: [
       {
         title: 'React Developer',
         icon: <FaReact fontSize="16px" />,
-        extraClass: 'text-cyan-500 bg-cyan-50 dark:text-cyan-400 dark:bg-cyan-900',
+        extraClass:
+          'text-cyan-500 bg-cyan-50 dark:text-cyan-400 dark:bg-cyan-900',
       },
       {
         title: 'Encryption',
         icon: <MdEnhancedEncryption fontSize="16px" />,
-        extraClass: 'text-green-500 bg-green-50 dark:bg-green-900 dark:text-green-400',
+        extraClass:
+          'text-green-500 bg-green-50 dark:bg-green-900 dark:text-green-400',
       },
     ],
     screenshots: [
@@ -145,7 +163,6 @@ export const PROJECTS = [
         title: 'Home Page',
         src: '/assets/images/realestate/homepage.png',
         alt: 'Real Estate Home Page',
-
       },
       {
         title: 'Home Page Second',
