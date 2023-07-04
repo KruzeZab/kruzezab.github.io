@@ -80,7 +80,7 @@ export const PROJECTS = [
   },
   {
     id: 'messenger-dictionary-bot',
-    liveDemoLink: 'm.me/dictionarybotfb',
+    liveDemoLink: 'https://m.me/dictionarybotfb',
     title: 'Facebook Messenger Dictionary Bot',
     content: [
       'A Facebook messenger based bot to help users with their English.',

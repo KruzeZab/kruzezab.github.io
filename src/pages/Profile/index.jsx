@@ -93,50 +93,54 @@ function Projects() {
       {/* Project List */}
       <div className="item-wrapper">
         {PROJECTS.map((project) => (
-          <Link to={`project/${project.id}`}>
-            <SingleProject
-              key={project.title}
-              tags={project.tags}
-              title={project.title}
-            >
-              {/* Links */}
-              <div className="flex flex-col gap-2 mb-4 text-gray-700 dark:text-gray-100 text-sm">
-                {project.githubLink && <div>
+          <SingleProject
+            key={project.title}
+            tags={project.tags}
+            title={project.title}
+          >
+            {/* Links */}
+            <div className="flex flex-col gap-2 mb-4 text-gray-700 dark:text-gray-100 text-sm">
+              {project.githubLink && (
+                <div>
                   Github:{' '}
                   <a
+                    target="_blank"
                     href={project.githubLink}
                     className="text-blue-500 hover:underline"
                   >
                     {project.githubLink}
                   </a>
-                </div>}
-                
-                {project.liveDemoLink && (
-                  <div>
+                </div>
+              )}
+
+              {project.liveDemoLink && (
+                <div>
                   Live Demo:{' '}
                   <a
+                    target="_blank"
                     href={project.liveDemoLink}
                     className="text-blue-500 hover:underline"
                   >
                     {project.liveDemoLink}
                   </a>
                 </div>
-                )}
+              )}
+            </div>
 
-                
-              </div>
-
-              {/* Project Description */}
-              <ul className="list-wrapper">
-                {project.content.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <span className="text-sm text-blue-500 hover:underline block mt-3 ml-4">
-                Read more...
-              </span>
-            </SingleProject>
-          </Link>
+            {/* Project Description */}
+            <ul className="list-wrapper">
+              {project.content.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <Link
+              to={`project/${project.id}`}
+              replace
+              className="text-sm text-blue-500 hover:underline block mt-3 ml-4"
+            >
+              Read more...
+            </Link>
+          </SingleProject>
         ))}
       </div>
     </div>

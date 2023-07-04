@@ -20,6 +20,7 @@ const ProjectDetail = () => {
           <div>
             Github:{' '}
             <a
+              target="_blank"
               href={project.githubLink}
               className="text-blue-500 hover:underline"
             >
@@ -31,6 +32,7 @@ const ProjectDetail = () => {
         <div>
           Live Demo:{' '}
           <a
+            target="_blank"
             href={project.liveDemoLink}
             className="text-blue-500 hover:underline"
           >
