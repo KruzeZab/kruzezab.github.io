@@ -26,7 +26,7 @@ export const PROJECTS = [
   {
     id: 'image-steganography',
     githubLink: 'https://github.com/kruzezab/image-steganography',
-    liveDemoLink: 'https://demo.kaushalb.com.np/image-steganography/',
+    // liveDemoLink: 'https://demo.kaushalb.com.np/image-steganography/',
     title: 'Image Steganography',
     content: [
       'Powered by React and Redux for the development and Chakra-UI for design.',
@@ -80,7 +80,7 @@ export const PROJECTS = [
   },
   {
     id: 'messenger-dictionary-bot',
-    liveDemoLink: 'https://m.me/dictionarybotfb',
+    // liveDemoLink: 'https://m.me/dictionarybotfb',
     title: 'Facebook Messenger Dictionary Bot',
     content: [
       'A Facebook messenger based bot to help users with their English.',
@@ -135,7 +135,7 @@ export const PROJECTS = [
   {
     id: 'realestate',
     githubLink: 'https://github.com/KruzeZab/Realtor-Estate-Agent',
-    liveDemoLink: 'https://demo.kaushalb.com.np/realestate/',
+    // liveDemoLink: 'https://demo.kaushalb.com.np/realestate/',
     title: 'Real Estate Web App',
     content: [
       'User authentication and profile management functionalities are implemented, allowing users to create accounts, access personalized features, and save favorite properties.',
@@ -321,10 +321,34 @@ export const EDUCATION = [
 
 export const EXPERIENCES = [
   {
+    id: 'exp-leapfrog',
+    title: 'Software Engineer, Leapfrog Technology',
+    content: [
+      'Designed and implemented fiscal year logic and service tailored for multiple countries.',
+      'Integrated Slack notifications to deliver alerts and updates directly to users through slack.',
+      'Collaborated with stakeholders to gather and define project requirements.',
+      'Worked in a fast-paced environment to deliver complete feature within the given deadline.',
+    ],
+    tags: [
+      {
+        title: 'Web Development',
+        icon: <FaHtml5 fontSize="16px" />,
+        extraClass:
+          'text-red-500 bg-red-50 dark:text-red-100 dark:bg-red-900',
+      },
+      {
+        title: 'Communication',
+        icon: <BsFillChatTextFill fontSize="16px" />,
+        extraClass:
+          'text-green-500 bg-green-50 dark:text-green-400 dark:bg-green-900',
+      },
+    ],
+  },
+  {
     id: 'exp-201',
     title: 'React Developer, 201 IT Pvt. Ltd.',
     content: [
-      ' Worked as a React Deceloper',
+      ' Worked as a React Developer',
       'Created reusable React components and implemented complex state management using Redux or other similar frameworks.',
       'Collaborated with product managers, designers, and backend developers to implement features and functionalities that meet business requirements.',
       'Implemented lazy loading techniques to improve the initial load time of React applications.',
@@ -352,27 +376,5 @@ export const EXPERIENCES = [
       },
     ],
   },
-  {
-    id: 'exp-shangrila',
-    title: 'Software Engineer Intern, Youth of Shangrila',
-    content: [
-      'Collaborated with experienced web developers to design, code, test and debug websites using HTML, CSS, and JavaScript.',
-      'Gained hands-on experience in various web development tools and technologies, such as react, redux, git, etc.',
-      'Worked on client projects under the supervision of experienced web developers.',
-    ],
-    tags: [
-      {
-        title: 'Web Development',
-        icon: <FaHtml5 fontSize="16px" />,
-        extraClass:
-          'text-red-500 bg-red-50 dark:text-red-100 dark:bg-red-900',
-      },
-      {
-        title: 'Communication',
-        icon: <BsFillChatTextFill fontSize="16px" />,
-        extraClass:
-          'text-green-500 bg-green-50 dark:text-green-400 dark:bg-green-900',
-      },
-    ],
-  },
+  
 ];
