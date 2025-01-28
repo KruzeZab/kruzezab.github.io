@@ -246,7 +246,7 @@ const Profile = () => {
         {<Avatar />}
 
         {/* Resume Button */}
-        <div>
+        {/* <div>
           <a
             href="./resume.pdf"
             target="_blank"
@@ -254,7 +254,7 @@ const Profile = () => {
           >
             View Resume
           </a>
-        </div>
+        </div> */}
       </div>
       <h1 className="text-2xl font-extrabold text-gray-800 dark:text-gray-100 mb-2 tracking-wide">
         Kaushal Bhattarai
